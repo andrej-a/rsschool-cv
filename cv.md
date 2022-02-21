@@ -49,9 +49,27 @@ const _transformCharacter = (character, shortDescription = true) => {
 ## Work experience
 
 I have finished next courses:
-* [Полный курс по JavaScript + React - с нуля до результата](https://www.udemy.com/course/javascript_full/)
+
+* [Полный курс по JavaScript + React](https://www.udemy.com/course/javascript_full/)
 
 ![Certificate of ending](/rsschool-cv/Udemy JS serf.png)
 
-* [Практический JavaScript (Продвинутый уровень)](https://www.udemy.com/course/javascript_practice/) 
+* [Практический JavaScript (Продвинутый уровень)](https://www.udemy.com/course/javascript_practice/)
+
+And i have some studying projects:
+
+[Heroku Marvel API](https://marvel-service-react-project.herokuapp.com/)
+
+[Coffee shop](https://coffee-shop-react-project.herokuapp.com/)
+
+The code of these projects you can watch in my GitHub as and some others projects too.
+
+## Languages:
+
+My Englis is in the range of B1 INTERMEDIATE to B2 UPPER INTERMEDIATE, according to the [Efset online-test](www.efset.org)
+
+![Screenshot of the result](/rsschool-cv/efset 2.jpg)
+
+* Russian - Native
+
 
