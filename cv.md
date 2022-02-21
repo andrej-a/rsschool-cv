@@ -46,3 +46,12 @@ const _transformCharacter = (character, shortDescription = true) => {
 
 ```
 
+## Work experience
+
+I have finished next courses:
+* [Полный курс по JavaScript + React - с нуля до результата](https://www.udemy.com/course/javascript_full/)
+
+![Certificate of ending](/rsschool-cv/Udemy JS serf.jpg)
+
+* [Практический JavaScript (Продвинутый уровень)](https://www.udemy.com/course/javascript_practice/) 
+
