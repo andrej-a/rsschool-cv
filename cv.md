@@ -15,7 +15,7 @@
 
 ## About me
 
-I like to solve interesting tasks and to find answers for difficult questions myself, however do not afraid ask for help or advice. In all time of studying I`ve got two main problems: sometimes my code isn`t working and I don`t know why; and sometimes my code is working and I don`t know why.
+I like solving interesting tasks and finding the answers for difficult questions myself, however do not afraid to ask for help or an advice. In all time of studying I've got two main problems, sometimes my code isn't working and I don't know why; and sometimes my code is working and I don't know why.
 
 ## My skills
 
