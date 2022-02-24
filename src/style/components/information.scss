@@ -1,0 +1,61 @@
+.information {
+    width: $width;
+    min-height: 450px;
+    height: auto;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin: 50px 0 50px 0;
+
+    &__contacts {
+        width: 50%;
+        min-height: inherit;
+        height: inherit;
+        border-right: 1px solid $main-color;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        font-family: 'Nunito Sans', sans-serif;
+
+        ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+
+            li {
+                font-size: 24px;
+                margin-top: 20px;
+
+                a {
+                    text-decoration: none;
+                    color: $main-color;
+                }
+            }
+        }
+
+    }
+
+    &__selfdescription {
+        width: 50%;
+        min-height: inherit;
+        height: auto;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        p {
+            font-size: 24px;
+            font-family: 'Nunito Sans', sans-serif;
+            padding: 25px;
+            text-indent: 20px;
+        }
+
+    }
+}

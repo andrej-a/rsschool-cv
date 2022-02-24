@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>RS-School CV</title>
+</head>
+<body>
+    <div class="wrapper">
+        <header>
+            <div class="header">
+                <div class="header__title">
+                    <h1>Andrej Amelyanovich</h1>
+                </div>
+                
+                <div class="header__photo">
+                    <!-- <img src="" alt="andrej_a__photo"> -->
+                </div>
+            </div>
+        </header>
+        <main>
+            <section>
+                <div class="information">
+                    <div class="information__contacts">
+                        <h2 class="subtitle">CONTACTS</h2>
+
+                        <ul class="information__contacts__block">
+                            <li> <b>Phone:</b> +37529 313-07-25</li>
+                            <li> <b>E-mail:</b> amelyanovich.andrej@mail.ru</li>
+                            <li> <b>Telegram:</b> @andrej_amelyanovich</li>
+                            <li> <a href="https://www.linkedin.com/in/andrej-a-14061995/" target="_blank" rel="noopener noreferrer">Linkedin</a> </li>
+                            <li> <a href="https://github.com/andrej-a" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="information__selfdescription">
+                        <h2 class="subtitle">ABOUT ME</h2>
+                        <p>I like solving interesting tasks and finding the answers for difficult questions myself, however do not afraid to ask for help or an advice. In all time of studying I`ve got two main problems, sometimes my code isn`t working and I don`t know why; and sometimes my code is working and I don`t know why.</p>
+                    </div>
+                </div>
+            </section> <!-- INFORMATION -->
+
+            <section>
+                <div class="skills">
+                    <h2 class="subtitle">MY SKILLS</h2>
+
+                    <div class="skills__wrapper">
+                        <ul>
+                            <li>HTML/CSS/SASS</li>
+                            <li>JavaScript</li>
+                            <li>React/React Hooks</li>
+                            <li>git/GitHub</li>
+                        </ul>
+                    </div>
+                </div>
+            </section> <!-- SKILLS -->
+
+            <section>
+                <div class="code-example">
+                    <h2 class="subtitle">CODE EXAMPLE</h2>
+                    <p>This is a function for getting some data from API and working with it.</p>
+                    <div class="code-example__wrapper">
+
+                    <pre class="hljs" style="display: block; overflow-x: auto; padding: 0.5em; background: rgb(240, 240, 240); color: rgb(68, 68, 68);">
+                            <span class="hljs-keyword" style="font-weight: 700;">const</span> getCharacterByName = <span class="hljs-keyword" style="font-weight: 700;">async</span> (name) =&gt; {
+                                <span class="hljs-keyword" style="font-weight: 700;">const</span> res = <span class="hljs-keyword" style="font-weight: 700;">await</span> request(<span class="hljs-string" style="color: rgb(136, 0, 0);">`<span class="hljs-subst" style="color: rgb(68, 68, 68);">${_apiBase}</span>characters?name=<span class="hljs-subst" style="color: rgb(68, 68, 68);">${name}</span>&amp;<span class="hljs-subst" style="color: rgb(68, 68, 68);">${_apiKey}</span>`</span>);
+                                <span class="hljs-keyword" style="font-weight: 700;">return</span> res[<span class="hljs-string" style="color: rgb(136, 0, 0);">"data"</span>][<span class="hljs-string" style="color: rgb(136, 0, 0);">"results"</span>].length &gt; <span class="hljs-number" style="color: rgb(136, 0, 0);">0</span> ? _transformCharacter(res[<span class="hljs-string" style="color: rgb(136, 0, 0);">"data"</span>][<span class="hljs-string" style="color: rgb(136, 0, 0);">"results"</span>][<span class="hljs-number" style="color: rgb(136, 0, 0);">0</span>], <span class="hljs-literal" style="color: rgb(120, 169, 96);">false</span>) : [];
+                            };
+                        
+                            <span class="hljs-keyword" style="font-weight: 700;">const</span> _transformCharacter = (character, shortDescription = <span class="hljs-literal" style="color: rgb(120, 169, 96);">true</span>) =&gt; {
+                                <span class="hljs-keyword" style="font-weight: 700;">return</span> {
+                                    id: character.id,
+                                    name: shortDescription ? doShortDescription(character.name, <span class="hljs-number" style="color: rgb(136, 0, 0);">20</span>) : character.name,
+                                    thumbnail: (character.thumbnail.path + <span class="hljs-string" style="color: rgb(136, 0, 0);">`.<span class="hljs-subst" style="color: rgb(68, 68, 68);">${character.thumbnail.extension}</span>`</span>),
+                                    description: (character.description === <span class="hljs-string" style="color: rgb(136, 0, 0);">""</span> ? <span class="hljs-string" style="color: rgb(136, 0, 0);">"Sorry, there is not description."</span> : 
+                                    shortDescription ? doShortDescription(character.description, <span class="hljs-number" style="color: rgb(136, 0, 0);">150</span>) : character.description),
+                                    homeLink: character.urls[<span class="hljs-number" style="color: rgb(136, 0, 0);">0</span>].url,
+                                    wikiLink: character.urls[<span class="hljs-number" style="color: rgb(136, 0, 0);">1</span>].url,
+                                    comics: doSpliceOfComics(character.comics.items, <span class="hljs-number" style="color: rgb(136, 0, 0);">10</span>)
+                                };
+                            };
+                    </pre>
+
+                    </div>
+                </div>
+            </section> <!-- CODE EXAMPLE -->
+
+            <section>
+                <h2 class="subtitle">WORK EXPERIENCE</h2>
+                <p>I have finished next courses:</p>
+                <div class="experience">
+                    <div class="experience__wrapper">
+                        <ul>
+                            <li></li>
+                            <li></li>
+                        </ul>
+                    </div>
+                </div>
+            </section> <!-- WOR EXPERIENCE -->
+        </main>
+        <footer></footer>
+    </div>
+</body>
+</html>

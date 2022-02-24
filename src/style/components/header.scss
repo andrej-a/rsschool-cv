@@ -1,0 +1,30 @@
+
+header, .header{
+    width: $width;
+    height: 400px;
+    background-color: $main-color;
+
+    &__title{
+        width: 255px;
+        height: auto;
+        position: relative;
+        left: 700px;
+        top: 210px;
+        
+        h1{
+            font-family: 'Nunito Sans', sans-serif;
+            color: #fff;
+            font-size: 54px;
+        }
+    }
+
+    &__photo{
+        width: 350px;
+        height: 350px;
+        position: relative;
+        top: -20px;
+        left: 150px;
+        border-radius: 50%;
+        background-color: #fff;
+    }
+}

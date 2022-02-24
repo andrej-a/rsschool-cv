@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Merienda:wght@400;700&family=Nunito+Sans:wght@400;700&display=swap');
+@import "./varyables.scss";
+@import "./components/header.scss";
+@import "./components/information.scss";
+@import "./components/skills.scss";
+@import "./components/code-example.scss";
+@import "./components/experience.scss";
+
+/*
+font-family: 'Merienda', cursive;
+font-family: 'Nunito Sans', sans-serif;
+*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.wrapper{
+    margin: 0 auto;
+    min-width: 1300px;
+    min-height: 900px;
+    width: 100%;
+    height: auto;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .subtitle {
+        margin: 20px 0 20px 0;
+        font-size: 36px;
+        color: $main-color;
+    }
+}
