@@ -7,7 +7,7 @@ const cleanCSS = require("gulp-clean-css");
 const postcss = require("gulp-postcss");
 
 // const dist = "/Applications/MAMP/htdocs/test"; // Ссылка на вашу папку на локальном сервере
-const dist = "./dist";
+const dist = "./";
 
 gulp.task("copy-html", () => {
     return gulp.src("./src/index.html")
@@ -56,7 +56,7 @@ gulp.task("build-js", () => {
 
 gulp.task("watch", () => {
     browsersync.init({
-		server: "./dist/",
+		server: "./",
 		port: 4000,
 		notify: true
     });

@@ -105,6 +105,43 @@ header, .header {
   .code-example pre {
     font-size: 16px; }
 
+.experience {
+  width: 1200px;
+  min-height: 300px;
+  height: auto;
+  margin-bottom: 20px; }
+  .experience h2 {
+    text-align: center; }
+  .experience p {
+    font-size: 20px;
+    font-family: 'Nunito Sans', sans-serif;
+    padding-left: 50px;
+    margin-bottom: 20px; }
+  .experience ul {
+    width: 1200px;
+    min-height: ihnerit;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    list-style: none; }
+    .experience ul li {
+      width: 50%;
+      min-height: inherit;
+      height: 400px;
+      cursor: pointer; }
+      .experience ul li .shadow {
+        width: ihnerit;
+        height: 400px;
+        background-color: #d24448;
+        opacity: 0;
+        visibility: none;
+        transition: opacity .5s ease; }
+      .experience ul li .shadow:hover {
+        opacity: .7;
+        visibility: visible; }
+
 /*
 font-family: 'Merienda', cursive;
 font-family: 'Nunito Sans', sans-serif;
