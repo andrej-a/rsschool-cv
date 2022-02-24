@@ -20,11 +20,23 @@ header, .header{
 
     &__photo{
         width: 350px;
-        height: 350px;
+        height: 400px;
         position: relative;
-        top: -20px;
+        top: -40px;
         left: 150px;
-        border-radius: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50px;
         background-color: #fff;
+
+        img {
+            width: 330px;
+            height: 380px;
+            object-fit: fill;
+            border-radius: 50px;
+        }
+
     }
 }
