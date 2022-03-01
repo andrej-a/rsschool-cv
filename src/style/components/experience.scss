@@ -21,16 +21,18 @@
         height: auto;
         display: flex;
         flex-direction: row;
-        justify-content: center;
+        flex-wrap: wrap;
+        justify-content: space-between;
         align-items: center;
         list-style: none;
 
         li {
             position: relative;
-            width: 50%;
+            width: 48%;
             min-height: inherit;
             height: auto;
             cursor: pointer;
+            margin-bottom: 40px;
 
             img {
                 position: relative;
@@ -41,32 +43,6 @@
                 z-index: 1;
             }
             
-            .shadow{
-                position: absolute;
-                width: 100%;
-                height: 400px;
-                background-color: $main-color;
-                opacity: 0;
-                visibility: visible;
-                transition: opacity .5s ease;
-                z-index: 5;
-                top: 0;
-                left: 0;
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                align-items: center;
-
-                a{
-                    font-size: 36px;
-                    color: #fff;
-                    text-decoration: none;
-                }
-            }
-            .shadow:hover{
-                opacity: .7;
-                visibility: visible;
-            }
         }
     }
 }
