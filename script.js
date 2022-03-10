@@ -86,14 +86,83 @@
 /************************************************************************/
 /******/ ({
 
+/***/ "./src/js/downloadFile.js":
+/*!********************************!*\
+  !*** ./src/js/downloadFile.js ***!
+  \********************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+
+
+const triggers = document.querySelectorAll(".header__download-btn");
+const path = "./src/img/testFile.docx";
+
+function CreateDownloadItem(path) {
+  const element = document.createElement("a");
+  element.setAttribute("href", path);
+  element.setAttribute("download", "amelyanovich-CV");
+  element.style.display = "none";
+  document.body.appendChild(element);
+  element.click();
+  document.body.removeChild(element);
+}
+
+function init() {
+  triggers.forEach(btn => {
+    btn.addEventListener("click", () => {
+      CreateDownloadItem(path);
+    });
+  });
+}
+
+/* harmony default export */ __webpack_exports__["default"] = (init);
+
+/***/ }),
+
 /***/ "./src/js/main.js":
 /*!************************!*\
   !*** ./src/js/main.js ***!
   \************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
+/*! no exports provided */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _downloadFile__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./downloadFile */ "./src/js/downloadFile.js");
+/* harmony import */ var _scroll__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./scroll */ "./src/js/scroll.js");
 
 
+Object(_scroll__WEBPACK_IMPORTED_MODULE_1__["default"])();
+Object(_downloadFile__WEBPACK_IMPORTED_MODULE_0__["default"])();
+
+/***/ }),
+
+/***/ "./src/js/scroll.js":
+/*!**************************!*\
+  !*** ./src/js/scroll.js ***!
+  \**************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return scroll; });
+
+
+function scroll() {
+  const btn = document.querySelectorAll(".header__menu__list__item");
+  btn.forEach(btn => {
+    btn.addEventListener("click", e => {
+      window.scrollTo({
+        top: document.querySelector(`.${e.target.innerText.toLowerCase()}`).getBoundingClientRect().top,
+        behavior: "smooth"
+      });
+    });
+  });
+}
 
 /***/ })
 
