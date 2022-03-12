@@ -1,6 +1,6 @@
 "use strict";
 const triggers = document.querySelectorAll(".header__download-btn");
-const path = "./src/img/testFile.docx";
+const path = "./src/documents/Andrej-Amelyanovich-CV.pdf";
 
 function CreateDownloadItem(path) {
     const element = document.createElement("a");
