@@ -1,0 +1,23 @@
+.languages{
+    width: $width;
+    min-height: 200px;
+    height: auto;
+
+    h2{
+        text-align: center;
+    }
+
+    &_wrapper{
+        li {
+            font-size: 20px;
+            text-indent: 20px;
+            font-family: 'Nunito Sans', sans-serif;
+            margin-bottom: 20px;
+    
+            a{
+                text-decoration: none;
+                color:$main-color;
+            }
+        }
+    }
+}
