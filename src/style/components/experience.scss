@@ -1,0 +1,48 @@
+.experience {
+    width: $width;
+    min-height: 300px;
+    height: auto;
+    margin-bottom: 20px;
+
+    h2 {
+        text-align: center;
+    }
+
+    p {
+        font-size: 20px;
+        font-family: 'Nunito Sans', sans-serif;
+        padding-left: 50px;
+        margin-bottom: 20px;
+    }
+
+    ul {
+        width: $width;
+        min-height: ihnerit;
+        height: auto;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        list-style: none;
+
+        li {
+            position: relative;
+            width: 48%;
+            min-height: inherit;
+            height: auto;
+            cursor: pointer;
+            margin-bottom: 40px;
+
+            img {
+                position: relative;
+                display: block;
+                margin: 0 auto;
+                width: 90%;
+                height: 400px;
+                z-index: 1;
+            }
+            
+        }
+    }
+}
